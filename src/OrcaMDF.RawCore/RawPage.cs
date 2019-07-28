@@ -11,14 +11,39 @@ namespace OrcaMDF.RawCore
 		public RawPageHeader Header { get; private set; }
 		internal byte[] RawBytes;
 
-		public IEnumerable<short> SlotArray
-		{
+        public IEnumerable<short> SlotArray
+        {
+            get
+            {
+                int pageEndIndex = 8192;
+
+                for (var i = 1; i <= Header.SlotCnt; i++)
+                    yield return BitConverter.ToInt16(RawBytes, pageEndIndex - i * 2);
+            }
+        }
+
+        public IEnumerable<short> BestEffortSlotArray
+        {
 			get
 			{
 				int pageEndIndex = 8192;
+                short? Short = null;
 
-				for (var i = 1; i <= Header.SlotCnt; i++)
-					yield return BitConverter.ToInt16(RawBytes, pageEndIndex - i * 2);
+                for (var i = 1; i <= Header.SlotCnt; i++)
+                {
+                    try
+                    {
+                        Short = BitConverter.ToInt16(RawBytes, pageEndIndex - i * 2);
+                    }
+                    catch
+                    { }
+
+                    if (Short != null)
+                    {
+                        yield return (short)Short;
+                    }
+                }
+
 			}
 		}
 
@@ -26,7 +51,7 @@ namespace OrcaMDF.RawCore
 		{
 			get
 			{
-				foreach (var entry in SlotArray)
+				foreach (var entry in BestEffortSlotArray)
 				{
 					RawRecord record = null;
 

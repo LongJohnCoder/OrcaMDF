@@ -1,0 +1,16 @@
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\LinqPad.exe.config
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\obj\Debug\LinqPad.csprojResolveAssemblyReference.cache
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\LinqPad.exe
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\LinqPad.pdb
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\ObjectDumper.dll
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.Core.dll
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.Framework.dll
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.OMS.exe
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.RawCore.dll
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\ObjectDumper.pdb
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.Core.pdb
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.Framework.pdb
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.RawCore.pdb
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\bin\Debug\OrcaMDF.OMS.pdb
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\obj\Debug\LinqPad.exe
+C:\Users\Administrador.SICMX.004\Source\Repos\OrcaMDF\LinqPad\obj\Debug\LinqPad.pdb

@@ -13,10 +13,16 @@ namespace OrcaMDF.RawCore.Types
 
 		public override object GetValue(byte[] bytes)
 		{
-			int time = BitConverter.ToInt32(bytes, 0);
-			int date = BitConverter.ToInt32(bytes, 4);
+            try
+            {
+                int time = BitConverter.ToInt32(bytes, 0);
+                int date = BitConverter.ToInt32(bytes, 4);
 
-			return new DateTime(1900, 1, 1).AddMilliseconds(time * CLOCK_TICK_MS).AddDays(date);
+                return new DateTime(1900, 1, 1).AddMilliseconds(time * CLOCK_TICK_MS).AddDays(date);
+            } catch (Exception ex)
+            {
+                return new DateTime(1900, 1, 1);
+            }
 		}
 	}
 }

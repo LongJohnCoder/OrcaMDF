@@ -103,9 +103,9 @@ namespace OrcaMDF.Framework
 		/// <summary>
 		/// As we currently do not allow calling methods on rows, BindInvokeMember should never be called.
 		/// </summary>
-		public override DynamicMetaObject BindInvokeMember(InvokeMemberBinder binder, DynamicMetaObject[] args)
-		{
-			throw new InvalidOperationException();
-		}
+		//public override DynamicMetaObject BindInvokeMember(InvokeMemberBinder binder, DynamicMetaObject[] args)
+		//{
+		//	throw new InvalidOperationException();
+		//}
 	}
 }
